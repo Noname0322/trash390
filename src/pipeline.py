@@ -12,6 +12,7 @@ def load_pipeline() -> StableDiffusionXLPipeline:
         torch_dtype=torch.float16,
         local_files_only=True,
     ).to("cuda")
+
     pipeline = opttf_pipeline(pipeline)
 
     pipeline(prompt="")
