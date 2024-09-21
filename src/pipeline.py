@@ -17,6 +17,7 @@ def load_pipeline() -> StableDiffusionXLPipeline:
 
     pipeline(prompt="")
 
+    
     return pipeline
 
 
